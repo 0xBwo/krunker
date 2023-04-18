@@ -6,3 +6,4 @@ CREDITS
 4.  -- https://www.youtube.com/@Lunatize lunatize astolfo
 5.  -- cutie comp -NamekujiLSDs#7777, (https://namekujilsds.github.io)
 6.  -- NTEC https://discord.gg/jnCbmCAStK
+7.  -- https://github.com/the1der4 (Clean and another one from discord)
