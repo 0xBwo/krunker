@@ -1,0 +1,175 @@
+/*
+Css_Maker : 1der4#8959
+*/
+
+/*Menu UI*/
+/*Disable something useless*/
+
+#aHolder,
+.endAHolder,
+#merchImg,
+#onetrust-consent-sdk,
+#braveWarning,
+#youNewDiv,
+#newsHolder,
+#streamContainer,
+#newUserGuide,
+#krDiscountAd,
+#updateAd,
+#editorBtnM,
+.verticalSeparator,
+.terms.standout,
+.verticalSeparatorInline,
+.terms,
+#termsInfo,
+.menuWindowSideL,
+.windowHeader,
+.menuSocialB,
+#menuBtnProfile,
+#menuBtnShop,
+#menuBtnChall,
+#menuBtnSocial,
+#menuBtnMaps,
+#menuBtnMods,
+#menuBtnSettings,
+#mainLogo,
+#freeKRAd,
+#rankedBlog,
+#doubleXPAd,
+#seasonLabel,
+#menuClassNameTag
+{
+    display : none !important;
+}
+
+.headerBarRight,
+.headerBarLeft,
+#mLevelCont,
+#chatInputHolder,
+#chatList,
+#customizeButton,
+#policeButton,
+#menuBtnHost,
+#menuBtnBrowser,
+#menuBtnRanked,
+#inviteButton,
+#menuBtnJoin,
+#menuItemContainer,
+#menuLvlHold{
+    background-color:transparent;
+}
+
+#classPreviewCanvas{
+    opacity: 0;
+}
+/*Profile*/
+
+.xpBar,
+.pSt{
+    background-color:transparent;
+}
+
+/*Chatbox*/
+
+#chatInput::placeholder{
+    color: transparent;
+}
+
+#chatInputHolder::before{
+    content: "";
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 70px;
+}
+
+/*Challenge*/
+.challHeadrI,
+.challRotImg,
+.challMapCvr{
+    display:none;
+}
+
+.chalCard,
+.chalRews,
+.challCrdMsg{
+    background-color:transparent;
+}
+
+/*Lost Connection*/
+
+.instructionsHeader{
+    background-color:transparent
+}
+
+/*Endcard*/
+
+.endCard,
+.tabHeader{
+    background-color:transparent;
+}
+
+
+/*Streamers*/
+.youNewDiv {
+    display: none !important;
+}
+
+/*setting*/
+
+.setSugBox2,
+.setBodH,
+.setHed
+{
+    background-color:transparent;
+}
+
+.setSugBox2{
+    display:none;
+}
+
+/*Health*/
+
+#hudClassIcon,#healthBar,.hpBSeg,.healthBarSeg,#challIcon {
+    display: none;
+}
+
+/*Ammo*/
+
+#ammoIcon {
+    display: none !important;
+}
+
+/*Top Left*/
+
+#pingIcon,
+#timerIcon {
+    display: none;
+}
+
+.leftUIB,
+#timerDisplay{
+    background-color: transparent;
+}
+
+
+/*Top Right*/
+
+{
+    background-color: transparent;
+}
+
+#streakCount,
+.countIcon,
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#kdIcon{
+    background-color: transparent;
+}
+
+/*Leaderboard*/
+
+#leaderDisplay {
+    background-color: transparent;
+}
