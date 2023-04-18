@@ -5,3 +5,4 @@ CREDITS
 3.  -- gatoclient (serpentkeys.css)
 4.  -- https://www.youtube.com/@Lunatize lunatize astolfo
 5.  -- cutie comp -NamekujiLSDs#7777, (https://namekujilsds.github.io)
+6.  -- NTEC https://discord.gg/jnCbmCAStK
