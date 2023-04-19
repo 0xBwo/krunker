@@ -42,14 +42,6 @@
     padding-bottom: 50px;
 }
 
-
-
-#termsInfo:before {
-    content  : "Subscribe to Benitto";
-    color    : red;
-    font-size: 20px;
-}
-
 .verticalSeparatorInline {
     display: none;
 }
