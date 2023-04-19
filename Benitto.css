@@ -1,0 +1,245 @@
+:root {
+    /*LeaderBoard*/
+    --color1: #F0CC27;
+    
+    /*Why i add this...?*/
+    --color3: #0000;
+    /*timer color*/
+    --time  : #F0CC27;
+    /*ammo color*/
+    --ammoC : #fff;
+    /*Health color*/
+    --hpC   : #fff;
+    /*reload bar color*/
+    --relc1 : #F0CC27;
+    --relc2 : #F5C714;
+    /*[R]Reloading color*/
+    --relmsg: #E8130E;
+}
+
+@font-face {
+    font-family: gamefont;
+    src        : url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+.weapKey {
+    display: none !important
+}
+
+.headerBarRight {
+    background: transparent;
+}
+
+
+
+.menuItem:hover {
+    border-left: unset;
+    border-top : 0px solid;
+}
+
+#mapInfoHolder {
+    display       : block;
+    bottom        : 13%;
+    padding-bottom: 50px;
+}
+
+
+
+#termsInfo:before {
+    content  : "Subscribe to Benitto";
+    color    : red;
+    font-size: 20px;
+}
+
+.verticalSeparatorInline {
+    display: none;
+}
+
+.terms {
+    font-size: 0;
+}
+
+#mapInfo {
+    margin-top: 10px;
+    ;
+}
+
+#subLogoButtons {
+    bottom: 15%;
+}
+
+#uiBase.onMenu #chatHolder {
+    bottom    : 2%;
+    left      : 5%;
+    transition: .8s;
+}
+
+#uiBase.onMenu #voiceDisplay {
+    display: none;
+}
+
+
+/*Game UI*/
+
+#leaderDisplay:before {
+    content: "LeaderBoard";
+    color  : var(#F0CC27);
+}
+
+#leaderContainer {
+    margin-top: 10px;
+    border-top: 4px dotted var(--color1)
+}
+
+
+#killsVal,
+#deathsVal,
+#streakVal
+#myScoreVal,
+#kdVal {
+    color: white;
+}
+
+.weapItem {
+    display  : block;
+    position : fixed;
+    left     : 96%;
+    bottom   : 3%;
+    transform: translateX(-50%);
+}
+
+.weapIcon[style="opacity: 0.7; margin-right: 25px;"],
+.weapIcon[style="opacity: 0.7;"],
+.weapIcon[style="opacity:0.7;margin-right:25px"] {
+    transform : rotateX(90deg);
+    transition: .3s;
+    filter    : drop-shadow(4px 4px 0px var(--color2));
+}
+
+.weapIcon[style="opacity: 1;"],
+.weapIcon[style="opacity:1"],
+.weapIcon[style="opacity: 1; margin-right: 25px;"] {
+    transition: .2s;
+    filter    : drop-shadow(4px 4px 0px var(--color2));
+}
+
+#timerDisplay {
+    display   : block !important;
+    background: transparent;
+    left      : 50%;
+    bottom    : 3%;
+    position  : fixed;
+    transform : translateX(-50%);
+}
+
+#timerIcon {
+    display: none;
+}
+
+#timerVal {
+    color    : var(--time);
+    font-size: 40px;
+}
+
+.debugInfo {
+    background : rgba(0, 0, 0, .3);
+    padding    : 10px;
+    bottom     : 3%;
+    left       : 10px;
+    margin-top : -10px;
+    margin-left: -10px;
+}
+
+#timerVal,
+#ammoVal,
+#healthValue {
+    text-shadow: 2px 2px black, 2px -2px black, -2px 2px black, -2px -2px black;
+}
+
+#ammoDisplay {
+    position        : fixed;
+    bottom          : 15%;
+    left            : calc(50% - 40px);
+    transform       : unset;
+    width           : 80px;
+    padding         : 0;
+    height          : 8px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--relc1), var(--relc2))
+}
+
+#ammoVal {
+    position : fixed;
+    bottom   : 10%;
+    right    : 2%;
+    font-size: 50px;
+    color    : var(--ammoC)
+}
+
+#ammoMax,
+#ammoIcon {
+    display: none;
+}
+#healthValue {
+    color    : var(--hpC);
+    font-size: 0px;
+    position : fixed;
+    left     : 40%;
+    bottom   : 35%;
+}
+
+
+#maxHP,
+#challIcon {
+    display: none;
+}
+
+#healthValueHolder {
+    background: transparent;
+}
+
+#reloadMsg {
+    padding-left : unset;
+    padding-right: unset;
+    line-height  : unset;
+    bottom       : 44%;
+    background   : transparent;
+    border       : none;
+    color        : var(--relmsg);
+}
+
+.healthBarSeg {
+    width        : -webkit-fill-available;
+    margin-right : -1px;
+    border-radius: unset;
+    background   : transparent;
+}
+
+#healthBar {
+    border        : 63aa63 solid 2px;
+    width         : 320px;
+    height        : 12px;
+    display       : flex;
+    flex-direction: row;
+    background    : transparent;
+    position      : fixed;
+    bottom        : 10px;
+    left          : 50%;
+    transform     : translateX(-50%);
+}
+
+.hpBSeg {
+    border-radius: unset;
+    box-shadow   : unset;
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#rankedSoonTm {
+    display: none;
+}
+
+.menuSocialB {
+    display: none !important;
+}
