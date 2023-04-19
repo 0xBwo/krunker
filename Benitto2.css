@@ -1,0 +1,1230 @@
+:root {
+    --accent-color: #ffffff; /* change this to change the color of the text in the menu */
+    --health-color: var(--accent-color);
+    --ammo-color: #fff;
+    --menu-bg-color: rgba(15, 15, 15, .2);
+    --menu-bg-color-secondary: rgba(0, 0, 0, .5);
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+    --text-transform: none;
+    --health-br: 0px;
+    --overall-br: 0px; /* Border Radius */
+    --first-br: 8px 0px 0px 8px;
+    --last-br: 0px 8px 8px 0px;
+    --b1: #FFDF00;
+    --b1e: #FFD700;
+    --b2: #FFDF00;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+ 
+@font-face {
+    font-family: hpammo;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+
+@import url(https://raw.githubusercontent.com/DubMikeGaming/css/main/javascript.js);
+/* animations */
+/* Health Bar Animation */
+@keyframes health_bar_animat {
+    from {
+        transform: translateY(25px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+a {
+    color: var(--accent-color);
+}
+
+a:active {
+    color: var(--accent-color);
+}
+
+a:visited {
+    color: var(--accent-color);
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.material-icons[style*="color:#FBC02D"] {
+    color: var(--verified-color) !important;
+}
+
+.material-icons[style*="color:#40C4FF"] {
+    color: var(--verified-color) !important;
+}
+
+#aHolder {
+    display: none !important;
+}
+
+.endAHolder {
+    display: none !important;
+}
+
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/1046484690787369061/1049503226094944378/benittos_Krunker_Logo.PNG);
+
+}
+#mainLogoFace {
+    display: none;
+}
+
+#streamContainer {
+    display: none !important;
+}
+
+#merchImg {
+    display: none;
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+	display: none !important;
+}
+
+#seasonLabel {
+    display: none !important;
+}
+
+#newsHolder {
+	display: none;
+	background-color: var(--menu-bg-color);
+    border-radius: 0;
+}
+
+.youNewDiv {
+    opacity: 0
+}
+
+#updateAdIcon {
+	display: none;
+	background-color: var(--menu-bg-color);
+    border-radius: 0;
+}
+
+#helpTxtHol {
+	display: none;
+	background-color: var(--menu-bg-color);
+    border-radius: 0;
+}
+
+#helpTxtHol:hover {
+    opacity: 0
+}
+
+.newsItem {
+    color: #fff;
+    border: none;
+}
+
+.newsItem span {
+    color: #fff !important;
+}
+
+#uiBase.onMenu #spectButton {
+    text-transform: var(--text-transform);
+}
+
+#claimImg {
+    height: 70px;
+}
+
+#claimTimer {
+    text-transform: var(--text-transform);
+}
+
+#braveWarning {
+    display: none !important;
+}
+
+.button {
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    text-transform: var(--text-transform);
+}
+
+.button:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.button.small {
+    font-size: 18px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.button.small:hover {
+    background-color: transparent !important;
+}
+
+.buttonPI {
+    box-shadow: none !important;
+}
+
+.buttonPI:hover {
+    box-shadow: none !important;
+}
+
+.buttonR {
+    box-shadow: none !important;
+}
+
+.buttonR:hover {
+    box-shadow: none !important;
+}
+
+.buttonP {
+    box-shadow: none !important;
+}
+
+.buttonP:hover {
+    box-shadow: none !important;
+}
+
+.buttonG {
+    box-shadow: none !important;
+}
+
+.buttonG:hover {
+    box-shadow: none !important;
+}
+
+.button.lgn {
+    position: absolute;
+    left: 0;
+    width: max-content !important;
+    padding-left: 22px !important;
+    margin-left: 8px !important;
+    font-size: 18px !important;
+}
+
+.button.lgn .material-icons {
+    display: none;
+}
+
+#subLogoButtons {
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+#menuBtnHost {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#menuBtnHost:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Host';
+    text-transform: var(--text-transform);
+}
+
+#menuBtnBrowser {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#menuBtnBrowser:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Broswer';
+    text-transform: var(--text-transform);
+}
+
+#menuBtnRanked {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#menuBtnRanked:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Ranked';
+    text-transform: var(--text-transform);
+}
+
+#inviteButton {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#inviteButton:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Invite';
+    text-transform: var(--text-transform);
+}
+
+#menuBtnJoin {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#menuBtnJoin:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Join';
+    text-transform: var(--text-transform);
+}
+
+#teamSelector {
+    bottom: 150px;
+}
+
+.centSwitch {
+    margin-top: 0;
+}
+
+.sliderCent {
+    border-radius: 0;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.sliderCent:before {
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.settText {
+    color: var(--accent-color);
+}
+
+.settText:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.settLabel {
+    font-size: 18px;
+}
+
+.settLabel[style*="color:#2196F3"] {
+    color: var(--accent-color) !important;
+}
+
+.wepLink {
+    font-size: 18px;
+}
+
+.wepLink:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.floatR {
+    font-size: 18px;
+}
+
+.settName,
+.settNameSmall {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-top: 20px !important;
+}
+
+.settNameSmall {
+    margin-top: 0 !important;
+}
+
+.b {
+    color: #fff !important;
+}
+
+.setHed {
+    color: #fff;
+    font-size: 18px;
+}
+
+.plusOrMinus {
+    font-size: 36px !important;
+    margin-right: -8px !important;
+}
+
+.floatR [style*="color:rgba(0,0,0,0.5)"] {
+    color: var(--accent-color) !important;
+}
+
+#infoHolder>* {
+    visibility: hidden;
+}
+
+#rankedSoonTm {
+    visibility: hidden;
+}
+
+#voiceDisplay {
+    visibility: hidden;
+}
+
+
+#termsInfo {
+    background-color: transparent;
+}
+
+.terms {
+    visibility: hidden;
+}
+
+.terms:hover {
+    visibility: hidden;
+}
+
+.menuSocialB {
+    visibility: hidden;
+}
+
+.headerBarLeft {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.headerBarRight {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.verticalSeparator {
+    visibility: hidden;
+}
+
+.headerBarRight .verticalSeparator {
+    display: none;
+}
+
+.verticalSeparatorInline {
+    visibility: hidden;
+    height: 0;
+}
+
+#menuMiniProfilePic {
+    display: none;
+}
+
+#menuAccountUsername {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#menuKRCount {
+    font-size: 16px;
+}
+
+#menuLevelIcon {
+    display: none;
+}
+
+#menuLevelText {
+    font-size: 16px;
+    text-transform: var(--text-transform);
+}
+
+.progressBar {
+    background: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.progressBarInner {
+    background: var(--accent-color);
+    border-radius: 0;
+}
+
+#mailIcon:hover {
+    opacity: 1;
+    transform: none
+}
+
+#mLevelCont {
+    background-color: transparent;
+    text-shadow: none;
+    border-bottom-right-radius: 0;
+}
+
+.menuClassPlayerPremium {
+    color: var(--premium-color) !important;
+}
+
+.menuClassPlayerVerified {
+    color: var(--verified-color) !important;
+}
+
+.menuClassPlayerVirus {
+    display: none;
+}
+
+#menuClassSubtext {
+    text-shadow: none;
+    text-transform: var(--text-transform);
+}
+
+#menuClassName {
+    text-shadow: none;
+    text-transform: var(--text-transform);
+}
+
+#customizeButton .material-icons {
+    display: none;
+}
+
+#policeButton {
+    display: none;
+}
+
+.krSocial {
+    display: none;
+}
+
+.imageButton {
+    display: none !important;
+}
+
+#editorBtnM {
+    display: none;
+}
+
+#menuRegionLabel {
+    text-transform: var(--text-transform);
+}
+
+#menuFPSDisplay {
+    text-transform: var(--text-transform);
+}
+
+#menuFPS {
+    color: var(--accent-color) !important;
+}
+
+#menuPingIcon {
+    color: var(--accent-color) !important;
+}
+
+#menuPingDisplay .material-icons {
+    font-size: 16px;
+}
+
+.mailObj {
+    background-color: var(--menu-bg-color-secondary);
+    color: #fff;
+    border-radius: 0;
+}
+
+.mailFrom {
+    color: var(--accent-color);
+}
+
+.mailText {
+    color: #fff;
+}
+
+.menuItem {
+    align-items: center;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.menuItem:hover {
+    background: transparent;
+    color: #fff;
+    border-left: none;
+}
+
+.menuItem:active {
+    background: transparent;
+    color: #fff;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: 0;
+    color: var(--accent-color) !important;
+    font-size: 18px !important;
+    text-transform: var(--text-transform);
+    transition: all .2s;
+}
+
+.menuItem:hover .menuItemTitle {
+    color: #fff !important;
+}
+
+.menuItem:active .menuItemTitle {
+    color: #fff !important;
+}
+
+#menuWindow {
+    max-height: calc(100% - 360px) !important;
+    background-color: var(--menu-bg-color);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.menuTabsNew {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.menuTabNew {
+    color: var(--accent-color);
+}
+
+.menuTabNew:hover {
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.tabANew {
+    color: #fff !important;
+    border-bottom: none !important;
+}
+
+.tabANew:hover {
+    border-bottom: none !important;
+}
+
+#settingsTabLayout {
+    background-color: transparent !important;
+    font-size: 18px;
+}
+
+.settingsBtn {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+.settingTab:hover {
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.menuLink {
+    font-size: 18px;
+}
+
+.menuLink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#profilePicM {
+    border-radius: 0;
+}
+
+.xpBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.xpBarB {
+    background-color: var(--accent-color);
+}
+
+.xpBarV {
+    top: 7px;
+}
+
+.chalCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.chalRight {
+    color: var(--accent-color);
+}
+
+.chalDesc {
+    color: rgba(255, 255, 255, .5);
+}
+
+.chalXPBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.chalXPBarC {
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 0;
+}
+
+.chalProg {
+	top: 2px;
+}
+
+.settingsHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+#requiresRestart {
+    display: none;
+}
+
+.serverHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+.menuSelectorHeader {
+    font-size: 18px;
+}
+
+.menuSelector {
+    font-size: 18px;
+}
+
+#serverSearch,
+#settSearch {
+    background-color: var(--menu-bg-color-secondary);
+    font-size: 18px;
+    border-radius: 0;
+}
+
+#serverSearch::placeholder,
+#settSearch::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+}
+
+.quickJoin {
+    background-color: var(--accent-color);
+    border-radius: 0;
+}
+
+.partyAvatar {
+    border-radius: 0;
+}
+
+.jQR {
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+    box-shadow: none !important;
+}
+
+.jQR:hover {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.jQR:active {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.joinQueue {
+    background-color: transparent;
+    color: var(--accent-color);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.joinQueue:hover {
+    height: 60px;
+    margin-top: 10px;
+    color: #fff;
+    box-shadow: none;
+}
+
+.joinQueue:active {
+    height: 60px;
+    margin-top: 10px;
+    color: #fff;
+    box-shadow: none;
+}
+
+#modDropper {
+    background-color: var(--menu-bg-color-secondary);
+    border: 4px solid transparent;
+}
+
+#loadoutSelect {
+    background-color: var(--menu-bg-color-secondary) !important;
+    border-radius: 0 !important;
+}
+
+.loadoutBtn {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.classCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.classImgC {
+    border-radius: 0;
+}
+
+.classXPBar {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.clsXPBarC {
+    background-color: var(--accent-color);
+}
+
+.skinColorItem {
+    border: none;
+}
+
+.switch {
+    margin-bottom: 0;
+}
+
+.slidecontainer {
+    margin-top: 3px;
+}
+
+.slider {
+    border-radius: 0;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.slider::before {
+    border-radius: 0;
+}
+
+input:checked+.slider {
+    background-color: var(--accent-color);
+}
+
+input:focus+.slider {
+    box-shadow: none;
+}
+
+.slider2 {
+    border-radius: 0;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.slider2::before {
+    border-radius: 0;
+}
+
+input:checked+.slider2 {
+    background-color: var(--accent-color);
+}
+
+input:focus+.slider2 {
+    box-shadow: none;
+}
+
+.sliderM {
+    border-radius: 0;
+    background-color: var(--menu-bg-color-secondary) !important;
+}
+
+.sliderM::-webkit-slider-thumb {
+    border-radius: 0;
+    background: var(--accent-color);
+}
+
+.sliderM::-moz-range-thumb {
+    border-radius: 0;
+    background: var(--accent-color);
+}
+
+.sliderSml {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.sliderSml:before {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+input {
+    background: var(--menu-bg-color-secondary) !important;
+    color: var(--accent-color) !important;
+    border-radius: 0 !important;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+input[type=color] {
+    border: 4px solid #fff;
+    border-radius: 0;
+}
+
+input:checked+.sliderSml {
+    background-color: var(--accent-color)
+}
+
+input:focus+.sliderSml {
+    box-shadow: 0 0 1px #2196f3
+}
+
+.switchsml {
+    margin-bottom: 0;
+}
+
+.sliderVal {
+    height: 16px;
+    font-size: 16px;
+    border-radius: 0;
+    background: var(--accent-color);
+}
+
+.inputGrey {
+    background: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.inputGrey2 {
+    background: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.smlInput {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0 !important;
+}
+
+.smlInput::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.accountInput {
+    background-color: var(--menu-bg-color-secondary);
+    font-size: 18px;
+    border-radius: 0 !important;
+}
+
+.accountInput::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+}
+
+.searchBtn {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.accountButton {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.searchBtn:hover {
+    color: #fff;
+    filter: grayscale(.3);
+    -webkit-filter: grayscale(.3)
+}
+
+.subPassChg {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.subPassChg:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: none;
+}
+
+.lnkTw {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.lnkTw:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: none;
+}
+
+.hostMap {
+    border-radius: 0;
+    border: none;
+}
+
+.hostMapName {
+    text-shadow: none;
+}
+
+.hostMapYear {
+    text-shadow: none;
+}
+
+.hostMapVersion {
+    text-shadow: none;
+}
+
+.hostOpt {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.optName {
+    text-shadow: none;
+}
+
+.optCheck {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+input:checked+.optCheck {
+    background-color: var(--accent-color);
+}
+
+.hostToggle {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.hostToggle:hover {
+    color: #fff;
+}
+
+.hostPresetBtn {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+#presetSelect {
+    background-color: var(--menu-bg-color-secondary) !important;
+    border-radius: 0 !important;
+}
+
+.shopCard {
+    border-radius: 0;
+    text-shadow: none;
+}
+
+.loadMoreD {
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--accent-color);
+    border-radius: 0;
+}
+
+.loadMoreD:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.loadMoreW {
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--accent-color);
+    border-radius: 0;
+}
+
+#modVote {
+    font-size: 18px;
+}
+
+.voteHint {
+    background-color: transparent !important;
+    color: var(--accent-color);
+    text-shadow: none;
+}
+
+.voteHint:hover {
+    color: #fff;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.material-icons.vote {
+    font-size: 32px;
+}
+
+#mapInfo {
+    font-size: 18px;
+    text-transform: var(--text-transform);
+}
+
+/*MY CHANGES*/
+
+#instructions {
+    font-size: 0px;
+    animation: none
+}
+
+#instructions:after {
+    font-size: 32px;
+    content: 'Subscribe to Benitto'; /* text goes here */
+    animation: grow .8s infinite alternate
+}
+#menuKRCount > span {
+  display: none
+}
+
+#menuKRCount:before {
+    content:'$';
+    color: #69cd4d
+}
+#gameNameHolder {
+    pointer-events: all;
+    font-size: 0;
+    color: transparent;
+    transition: 0.5s;
+}
+
+#gameNameHolder:hover {
+    font-size: 36px;
+    color: #fff;
+}
+
+#gameNameHolder::after {
+    content: "CSS Made by DubMikeGaming";
+    display: block;
+    font-family: 'ISOCP';
+}
+
+
+#healthBar{
+    height: 45px;
+    background: #0000002b;
+    border-radius: var(--health-br)
+    position: fixed;
+}
+.hpBSeg,
+.healthBarSeg{
+    box-shadow: 0 0 black;
+    background: transparent;
+}
+
+.healthBarSeg /* BG/Container of the main segments of healthbar */{
+    margin-right: -5px!Important;
+    width: 50px !important;
+}
+
+.hpBSeg /* Inner contents aka main healthbar segments */{
+    color: transparent!Important;
+    background-color: transparent!Important;
+    border-radius: 0
+}
+
+/* Rounded Edges on both ends ( I don't like these) */
+
+.healthBarSeg:nth-child(1) .hpBSeg{
+    border-top-left-radius: var(--br);
+    border-bottom-left-radius: var(--br);
+}
+
+.healthBarSeg:nth-last-child(1) .hpBSeg{
+    border-top-right-radius: var(--br);
+    border-bottom-right-radius: var(--br);
+}
+
+
+
+.hpBSeg{
+    border-radius: var(--overall-br);
+}
+
+.healthBarSeg:first-child .hpBSeg{
+    border-radius: var(--first-br);
+}
+
+.healthBarSeg:last-child .hpBSeg{
+    border-radius: var(--last-br);
+}
+
+/* Gradient part done with pseudo class selectors */
+
+.healthBarSeg:nth-child(1) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1) 0%, var(--b1) 100%);
+}
+
+.healthBarSeg:nth-child(2) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1) 0%, var(--b1) 100%);
+}
+
+.healthBarSeg:nth-child(3) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1) 0%, var(--b1e) 100%);
+}
+
+.healthBarSeg:nth-child(4) .hpBSeg{
+    background: linear-gradient(90deg, var(--b1e) 0%, var(--b2) 100%);
+}
+
+.healthBarSeg:nth-child(5) .hpBSeg{
+    background: linear-gradient(90deg, var(--b2) 0%, var(--b2) 100%);
+}
+
+.healthBarSeg:nth-child(6) .hpBSeg{
+    background: linear-gradient(90deg, var(--b2) 0%, var(--b2) 100%);
+}
+
+
+
+#challIcon {
+    display: none !important;
+}
+
+#botRightHider {
+    display: flex !important;
+    flex-direction: row;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+#bottomRight, #weapDisplay {
+    position: unset;
+}
+
+#weapDisplay:not([style*=none]) {
+    display: flex !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+.weapItem {
+    margin-top: 0;
+    margin-right: -10px;
+    display: flex;
+}
+
+.weapIcon {
+    margin-right: 0 !important;
+    align-self: center;
+}
+
+.weapIcon[style*="0.7"] {
+    display: none;
+}
+
+.weapIcon[src*="melee"] {
+    margin-top: 10px;
+}
