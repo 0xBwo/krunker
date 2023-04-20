@@ -1,0 +1,628 @@
+/*summer css*/
+
+/*root*/
+
+:root {
+    --accent:#ee9ffc;
+    --accent3:#f29e29; 
+    --accent4:#4b92b8;
+    --accent5:#dcd0ff;
+    --background:#fadc46;
+}
+
+/*root*/
+
+/* Deletes */
+
+#voiceDisplay,#streamContainer,.youNewDiv,#mainLogo,#seasonLabel,.headerBarRight,#newsHolder,#aHider,#infoHider,#seasonLabel,#uiBase.onMenu #instructions,#timerIcon,#curGameInfo,#pingIcon,#healthBar,#hudClassIcon,#challIcon,#maxHP,#ammoMax,#ammoIcon {
+    display:none !important;
+}
+
+/* Deletes */
+
+/*font*/
+
+@font-face {
+    font-family:gamefont;
+    src: url(https://dl.dropboxusercontent.com/s/fkv8zreddc9azk3/Metron%20Text%20Pro%20Bold.ttf?dl=0);
+}
+
+/*font*/
+
+
+/*health*/
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 10px;
+    position: fixed;
+    right: 94%;
+    bottom: 4%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    color: var(--accent);
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    will-change: unset;
+    text-decoration: underline var(--accent3);
+    text-underline-offset: 8px;
+}
+
+/*health*/
+
+/*ammo*/
+
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/ee9ffc/ee9ffc.png);
+    transform: none;
+    width: 50px;
+	height: 4px;
+	top: calc(50% + 35px);
+	left: calc(50% - 20px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#ammoVal {
+    position: fixed;
+	font-size: 75px;
+    left: 94%;
+    bottom: 2%;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-decoration: underline var(--accent3) ;
+    text-underline-offset: 8px;
+
+}
+
+/*ammo*/
+
+/*menu*/
+
+.button, .button:hover { 
+    border: none !important;
+}
+
+.material-icons-outlined {
+	color: var(--accent) !important;
+}
+
+#menuItemContainer {
+    background-color: transparent;
+}
+
+/*menu*/
+
+/*leaderboard*/
+
+#leaderDisplay {
+    background-color: transparent;
+}
+
+.leaderName {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+.leaderCounter {
+    color: var(--accent5);
+    font-size: 20px;
+}
+
+.leaderNameM {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.leaderScore {
+    color: var(--accent4);
+    font-size: 20px;
+}
+
+.leaderNameF {
+    color: rgb(220, 253, 169);
+    font-size: 20px;
+}
+
+/*leaderboard*/
+
+/*counters*/
+
+#killsIcon,#deathsIcon,#streakIcon,#kdIcon,#scoreCount .material-icons,.leaderItem [src*="./img/ranked"] {
+	display:none;
+}
+
+.countIcon {
+    background-color:rgba(35, 35, 35, 0.3)
+}
+
+#killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal,#killCount:after,#deathCount:after,#streakCount:after,#scoreCount:after {
+    font-size:20px;
+    color:var(--accent);
+}
+
+.topRightCounters {
+    width:auto !important;
+    position:fixed;
+    bottom: 120px;
+    right:20px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#killCount:after {
+    content:"K";
+}
+
+#deathCount:after {
+	content:"D";
+}
+
+#streakCount:after {
+    content:"S";
+}
+
+#scoreCount:after {
+	content:"P";
+}
+
+/*timer*/
+
+#timerIcon {
+    display: none;
+}
+
+#timerDisplay {
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+}
+
+#timerVal {
+    color: var(--accent4);
+    font-size: 50px;
+}
+
+
+/*timer*/
+
+/*weaponIcon*/
+
+.weapIcon {
+    display: none;
+}
+
+  .weapKey {
+    display: none;
+}
+
+#weaponDisplay {
+    display: none;
+}
+
+/*weaponIcon*/
+
+#fpsDisplay {
+	background-color: transparent;
+	height:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	width:120px;
+    color: var(--accent)
+}
+
+#pingDisplay {
+    margin-top:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    height:15px;
+    width:120px;
+    color: var(--accent4);
+}
+
+#pingText {
+    color:var(--accent4);
+}
+
+#pingText:after {
+    content:' PING';
+    color:var(--accent);
+}
+
+#ingameFPS {
+    color:var(--accent4) !important;
+}
+
+/*chat*/
+
+#chatSwitch,#voiceDisplay {
+    display:none;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#chatList {
+    background-color:transparent;
+    border:none;
+}
+
+#chatInput {
+    margin-left:0;
+    border: none;
+    background-color: transparent;
+    left: 30px
+}
+
+#chatList {
+    bottom: 10px;
+}
+
+#chatInputHolder::before{
+    color: #fff;
+}
+
+
+#chatInput::placeholder {
+    color: transparent;
+}
+
+
+
+
+.chatMsg [style*="color:#eb5656"] {
+	color:var(--accent) !important;
+}
+
+.chatMsg[style="color:#fc03ec"] {
+    color:var(--accent) !important;
+}
+
+.chatMsg [style="color:#fff"] {
+    color: var(--accent)!important;
+}
+
+#uiBase.onMenu #chatHolder {
+	left: 280px;
+}
+
+#uiBase.onGame #chatHolder {
+    bottom: 200px;
+	left:60px;
+}
+
+#uiBase.onGame #chatInputHolder {
+    bottom: -40px;
+    position:absolute;
+    border: none;
+    background-color: transparent;
+}
+
+#uiBase.onMenu #chatInput {
+    background-color: var(--accent4);
+}
+
+#uiBase.onMenu #chatInput::placeholder {
+    color: rgb(160, 189, 241);
+    z-index: 999;
+    position: center;
+}
+
+#chatInputHolder{
+    background-color: transparent;
+    border: none;
+}
+
+.weaponChatIcon {
+    opacity: 100% !important;
+    filter: brightness(0.8) drop-shadow(0.5px 0.5px var(--accent)) drop-shadow(-0.5px -0.5px var(--accent)) drop-shadow(-0.5px 0.5px var(--accent)) drop-shadow(0.5px -0.5px var(--accent)) drop-shadow(0.5px 0.5px 0px var(--accent));
+}
+
+.meleeChatIcon,.thrownChatIcon,.fistChatIcon,.headShotChatIcon,.streakChatIcon {
+    opacity: 100% !important;
+    filter: brightness(0.8) drop-shadow(0.5px 0.5px var(--accent)) drop-shadow(-0.5px -0.5px var(--accent)) drop-shadow(-0.5px 0.5px var(--accent)) drop-shadow(0.5px -0.5px var(--accent)) drop-shadow(0.5px 0.5px 0px var(--accent));
+}
+
+/*chat*/
+
+#bubbleContainer,#policeButton img,#menuClassSubtext,#menuClassName,#customizeButton .material-icons {
+    display:none !important;
+}
+
+#menuClassContainer {
+    transform:none;
+    right:unset;
+    left:unset;
+    top:unset;
+    bottom:unset;
+}
+
+#menuClassContainer .button {
+    border:none !important;
+    background-color:transparent !important;
+    color:var(--accent);
+    transform:none !important;
+}
+
+#customizeButton {
+    font-size:0!important;
+    border-radius:0;
+    pointer-events:none;
+    background-color:transparent!important;
+    padding:0 !important;
+}
+
+#customizeButton:before {
+    content:"format_paint";
+    font-family:Material-icons;
+    font-size:25px;
+    position:fixed;
+    left:50%;
+    top:20px;
+    transform:translateX(-50%);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:auto;
+    width:150px;
+    height:60px;
+    background-color:transparent;
+    transition:color 0.3s;
+    font-size: 47px;
+}
+
+#policeButton {
+    position:fixed;
+    left:calc(50% + 200px);
+    top:40px;
+    transform:translateX(-50%);
+}
+
+#policeButton:before {
+    content:"gavel";
+    font-family:material icons;
+    font-size:60px;
+    color:var(--accent);
+    background-color:transparent;
+    transition:color 0.3s;
+}
+
+#classPreviewCanvas {
+    position:fixed;
+    left:50%;
+    top:100px;
+    transform:translateX(-50%);
+    margin-bottom:0;
+    opacity:0;
+    transition:opacity 0.5s;
+}
+
+#customizeButton:hover:before,#policeButton:hover:before {
+    color:#fff;
+    transition:color 0.3s;
+}
+
+#menuClassContainer:hover #classPreviewCanvas {
+    opacity:0.4;
+    transition:opacity 0.5s;
+}
+
+/* MenuClassContainer */
+
+/* HeaderBarLeft */
+
+.progressBar,#mLevelCont {
+    display:none;
+}
+
+.headerBarLeft {
+    background-color:var(--background);
+}
+
+/* HeaderBarLeft */
+
+/* Spectate */
+
+#spectButton [style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+    display:none;
+}
+
+#uiBase.onMenu #spectButton {
+    position:fixed;
+    left:calc(50% - 175px);
+    top:70px;
+    transform:translateX(-50%);
+}
+
+.sliderSml::before {
+    font-family:Material Icons;
+    content:"visibility_off";
+    font-size:40px;
+    color:var(--accent);
+    background-color:transparent;
+    width:max-content;
+    height:fit-content;
+    padding:10px;
+    transition:color 0.3s;
+}
+
+input:checked+.sliderSml::before {
+    content:"visibility";
+    color:#fff;
+    transform:none;
+    transition:color 0.3s;
+}
+
+.sliderSml {
+    background-color:transparent !important;
+}
+
+/* Spectate */
+
+
+#menuBtnHost {
+    background: var(--accent4);
+    opacity: 0.8;
+}
+
+#menuBtnBrowser {
+    background: var(--accent4);
+    opacity: 0.8;
+}
+
+#menuBtnRanked {
+    background: var(--accent4);
+    opacity: 0.8;
+}
+
+#inviteButton {
+    background: var(--accent4);
+    opacity: 0.8;
+}
+
+#menuBtnJoin {
+    background: var(--accent4);
+    opacity: 0.8;
+}
+
+#faceItIconM {
+    display: none;
+}
+
+#rankedSoonTm {
+    visibility:hidden;
+}
+
+#instructions {
+    font-size: 0px;
+    animation: none
+}
+
+-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+#initLoader {
+    background: url(https://cdn.discordapp.com/attachments/912083195351154791/944303860682461206/inline_image_preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#lC-cont {
+    visibility: hidden;
+       -webkit-animation: scale-up-center 4s linear infinite alternate both;
+    animation: scale-up-center 4s linear infinite alternate both;
+        right: -500px;
+        position: absolute;
+        bottom: -100px;
+        height: 300px !important;
+        width: 300px !important;
+}
+#lC-cont:before {
+    visibility: visible;
+    content: url(https://cdn.discordapp.com/attachments/912083195351154791/944305286208950272/s59doh4k60crx.png);
+    right: 1px;
+}
+
+#loadTipsHolder, #loadGamNm, #loadInfoRHolder, #loadInfoLHolder, #loadHeader {
+    display: none;
+}
+
+#aContainer {
+    display: none;
+}
+
+#aMerger {
+    display: none;
+}
+
+#aHolder {
+    display: none !important;
+}
+
+.endAHolder {
+    display: none !important;
+}
+
+#termsInfo {
+  display:none;
+}
+
+#termsInfo::before {
+  display: none;
+}
+
+#menuJNKCount {
+ display: none;
+}
+
+.discordSocial, .redditSocial {
+  display: none !important;
+}
+
+#menuSocialB { 
+  display: none;
+}
+
+#loadEditrBtn {
+  display: none;
+}
+
+#mainLogo {
+    display: none !important;
+}
+
+#seasonLabel {
+    display: none !important;
+}
+
+.button,.button:hover {
+    border: none !important
+}
+
+#initLoader::after {
+    content: "LOADING";
+    font-size: 120px;
+    position: fixed;
+    left: 5%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    color: rgb(227, 155, 236);
+       -webkit-animation: scale-up-center 4s linear infinite alternate both;
+    animation: scale-up-center 4s linear infinite alternate both;
+}
