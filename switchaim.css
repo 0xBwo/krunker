@@ -8,9 +8,6 @@
     font-family:gamefont;
     src:url(https://dl.dropboxusercontent.com/s/hi2sp9a5nq9t9ml/kaorigel.medium.ttf?dl=0)
 }
-#mainLogo {
-    content: url(https://cdn.discordapp.com/attachments/1098415798600613978/1098416023134294062/wL2wzny6NsQjiAqPd0pXvL.png);
-}
 /* health */
 
 #healthValueHolder {
